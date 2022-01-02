@@ -9,7 +9,6 @@ const main = async () => {
 
   do {
     opt = await inquirerMenu();
-    console.log({ opt });
 
     switch (opt) {
       case "1":
@@ -18,7 +17,7 @@ const main = async () => {
         break;
 
       case "2":
-        console.log(tareas._listado);
+        console.log(tareas.listadoArr);
         break;
 
       default:
