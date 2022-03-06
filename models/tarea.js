@@ -9,6 +9,10 @@ class Tarea {
     this.id = uuidv4();
     this.desc = desc;
   }
+
+  completada() {
+    return this.completadoEn !== null;
+  }
 }
 
 module.exports = Tarea;
